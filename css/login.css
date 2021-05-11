@@ -1,0 +1,285 @@
+:root {
+    --bg-start: #003A3D;
+    --bg-end: #83C5BE;
+
+    --highlight-primary: #EDF6F9;
+    --highlight-secondary: #E29578;
+    --hightlight-fg: #161c49;
+
+    --fg-color: rgba(255, 255, 255, 1);
+    --transition: 250ms ease-out; 
+
+    --bg-input: #d1d3d4;
+    --fg-input: var(--highlight-primary);
+
+    --shadow: rgba(0,0,0,0.75);
+
+    --font-size: 1rem;
+    --font-size-small: 0.85rem;
+
+    --padding: 0.75rem;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    color: var(--fg-color);
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+ 
+
+body{
+    display: grid;
+    place-items: center;
+    min-height : 100vh;
+    background: linear-gradient(
+        45deg,
+        var(--bg-start), 
+        var(--bg-end)
+    );
+}
+
+main{
+    --size: 40rem;
+    display: grid;
+
+    /* This part is a test */
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    /* ^ This part is a test */
+    
+    background: var(--bg-input);
+    width: calc(var(--size)/1.5);
+    height: calc(var(--size)/1.2);
+    color: var(--bg-color);
+
+    box-shadow: 0px 5px 10px 0px var(--shadow) ;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    position: fixed; 
+    padding: 10px 0;
+    background-color: var(--bg-start);
+    
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    
+}
+
+.logo > img{
+    position:center;
+    height: 5rem;
+    margin-right: 1rem;
+    margin-left: 25rem;
+
+}
+
+a{
+    color: var(--fg-color);
+    text-decoration: none;
+}
+
+a.button{
+    border: 1px solid var(--highlight-primary);
+    background-color: var(--highlight-primary);
+    color: var(--hightlight-fg);
+    padding: 0.25rem 1.5rem;
+
+    border-radius: 0.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    transition:
+     background-color var(--transition),
+     color var(--transition);
+
+}
+
+a.button:hover{
+    background-color:var(--highlight-secondary);
+    color: var(--highlight-primary);
+}
+
+
+nav > ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    list-style-type: none;
+    gap: 0.5rem;
+    padding-right: 15rem;
+}
+
+nav > ul a{
+    --dot-size: 0.5rem;
+    --dot-color: var(--highlight-primary);
+    position: relative;
+    padding: 0.25rem 1.25rem;
+    text-transform: uppercase;
+    transition: color var(--transition),
+    background-color var(--transition);
+    
+}
+
+nav > ul a::after{
+    content: '';
+
+    position: absolute;
+
+    width: var(--dot-size);
+    height: var(--dot-size);
+    top: 100%;
+    left: 50%;
+    border-radius: 50%;
+    border: 2px solid var(--dot-color);
+
+    opacity: 0;
+    transform: translate(-50%, -100%);
+    
+
+    transition: opacity var(--transition),
+     border-color var(--transition),
+     transform var(--transition)
+     ;
+        
+}
+
+
+nav > ul a:hover{
+    --dot-color: var(--highlight-secondary);
+    color: var(--highlight-secondary);
+    
+}
+
+nav > ul a:hover::after, 
+nav > ul>li.active>a::after{
+    opacity: 1;
+    transform: translate(-50%, 0%);
+}
+
+nav > ul >li.active > a{
+    --dot-color: var(--highlight-primary);
+    color: var(--highlight-primary);
+
+}
+
+nav > ul >li.highlight > a{
+    border-radius: 1rem;
+    border: 1px solid var(--highlight-primary);
+
+}
+
+nav > ul >li.highlight > a:hover{
+    background-color: var(--highlight-primary);
+    /* color: var(black); */
+}
+
+
+nav > ul >li.highlight > a::after{
+    content: none;
+}
+
+
+form {
+padding: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+
+h1{
+    margin-bottom: 0.5rem;
+    color: var(--highlight-primary);
+    font-size: 2.75rem;
+    font-weight: 300;
+}
+
+input[type="text"], input[type= "password"]{
+   
+
+    padding: var(--padding);
+    border-radius: var(--padding);
+
+    border: 2px solid transparent;
+
+    font-size: var(--font-size);
+
+
+    transition: border-color 250ms ease-in-out;
+}
+
+input[type="text"]:focus, input[type= "password"]:focus{
+
+    outline: none;
+    border-color:var(--highlight-secondary)
+
+}
+
+label{
+    font-size: var(--font-size-small);
+    text-align: center;
+}
+
+.regLink{
+    text-decoration: none;
+    padding-left: 2rem;
+    
+}
+
+.passLink{
+    font-size: small;
+}
+
+
+.regLink:hover, .passLink:hover{
+    text-decoration: underline;
+    color:#E29578;
+}
+
+
+
+button{
+    border: 1px solid var(--highlight-primary);
+    background-color: var(--highlight-primary);
+    border-color: var(--highlight-secondary);
+    color: var(--hightlight-fg);
+    padding: 0.25rem 1.5rem;
+
+    border-radius: 0.25rem;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    transition:
+     background-color var(--transition),
+     color var(--transition);
+}
+
+button:hover{
+    background-color:var(--highlight-secondary);
+    color: var(--highlight-primary);
+}
+

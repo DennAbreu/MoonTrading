@@ -1,0 +1,113 @@
+html {
+    color: var(--fg-color);
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg,
+            var(--bg-start),
+            var(--bg-end));
+}
+
+main {
+    --size: 40rem;
+    display: flex;
+
+    background: var(--bg-input);
+    width: calc(var(--size)/1.5);
+    height: calc(var(--size)/1);
+    color: var(--bg-color);
+
+    box-shadow: 0px 5px 10px 0px var(--shadow);
+}
+
+
+
+
+
+form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+h1 {
+    margin-bottom: 0.5rem;
+    color: var(--highlight-primary);
+    font-size: 2.75rem;
+    font-weight: 300;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+
+
+    padding: var(--padding);
+    border-radius: var(--padding);
+
+    border: 2px solid transparent;
+
+    font-size: var(--font-size);
+
+
+    transition: border-color 250ms ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+
+    outline: none;
+    border-color: var(--highlight-secondary)
+}
+
+label {
+    font-size: var(--font-size-small);
+    text-align: center;
+}
+
+.logLink {
+    text-decoration: none;
+    padding-left: 2rem;
+
+}
+
+
+
+.logLink:hover,
+.passLink:hover {
+    text-decoration: underline;
+    color: #E29578;
+}
+
+button {
+    border: 1px solid var(--highlight-primary);
+    background-color: var(--highlight-primary);
+    border-color: var(--highlight-secondary);
+    color: var(--hightlight-fg);
+    padding: 0.25rem 1.5rem;
+
+    border-radius: 0.25rem;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    transition:
+        background-color var(--transition),
+        color var(--transition);
+}
+
+button:hover {
+    background-color: var(--highlight-secondary);
+    color: var(--highlight-primary);
+}
