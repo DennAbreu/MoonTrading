@@ -20,14 +20,11 @@ session_start();
 
     <div class="header">
         <div class="logo">
-            <img src="assets/mt2.png">
-
+            <img src="assets/mt2.png" height ='95%'>
         </div>
-
         <nav>
             <ul>
-                
-                <li class=>
+                <li>
                     <a href="index.php">About Us</a>
                 </li>
                 
@@ -46,8 +43,8 @@ if (isset($_SESSION["userusname"])) {
                
             </ul>
         </nav>
-
     </div>
+    
 
 
 

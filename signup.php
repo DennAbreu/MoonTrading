@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="css/signup.css" type="text/css">
 <title>Sign Up</title>
 
+<div class = 'bodyStyle'>
     <main>
         <section>
             <div class="content">
@@ -49,7 +50,6 @@
                     </p>
                 </div>
 
-                <center>
                  <br><br>
              <?php
                 if(isset($_GET["error"])){
@@ -69,7 +69,6 @@
                     }
                 }
                 ?>
-            </center>
         
 
             </div>
@@ -77,6 +76,7 @@
              
         </section>
     </main>
+ </div>
 
 
 </body>

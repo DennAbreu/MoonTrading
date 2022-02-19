@@ -1,96 +1,83 @@
 html {
-    color: var(--fg-color);
-    font-family: "Nunito", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+  color: var(--fg-color);
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
-body {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    background: linear-gradient(45deg,
-            var(--bg-start),
-            var(--bg-end));
+.bodyStyle {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, var(--bg-start), var(--bg-end));
 }
-
 
 h1 {
-    margin-bottom: 0.5rem;
-    color: var(--highlight-primary);
-    font-size: 2.75rem;
-    font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: var(--highlight-primary);
+  font-size: 2.75rem;
+  font-weight: 300;
 }
 
 main {
-    --size: 40rem;
-    display: flexbox;
+  --size: 40rem;
+  /* display: flexbox; */
 
-    background: var(--bg-input);
-    width: 65%;
-    min-height: calc(var(--size)/1);
-    max-height: fit-content;
-    color: var(--bg-color);
-    box-shadow: 0px 5px 10px 0px var(--shadow);
+  background: var(--bg-input);
+  width: 65%;
+  min-height: calc(var(--size) / 1);
+  max-height: fit-content;
+  color: var(--bg-color);
+  box-shadow: 0px 5px 10px 0px var(--shadow);
 }
 
-
-
 input[type="text"] {
+  border-radius: var(--padding);
+  width: 10%;
+  border: 2px solid transparent;
+  padding-left: 5px;
+  font-size: var(--font-size);
 
-    border-radius: var(--padding);
-    width: 10%;
-    border: 2px solid transparent;
-    padding-left: 5px;
-    font-size: var(--font-size);
-
-
-    transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
 }
 
 input[type="text"]:focus {
-
-    outline: none;
-    border-color: var(--highlight-secondary)
+  outline: none;
+  border-color: var(--highlight-secondary);
 }
 
 .uHeading {
-    padding-left: 1%;
-    font-size: 30px;
-    color: var(--bg-start);
+  padding-left: 1%;
+  font-size: 30px;
+  color: var(--bg-start);
 }
-
 
 .currBank {
+  padding-left: 0.5rem;
+  background: var(--bg-end);
+  width: calc(var(--size) / 2);
+  height: calc(var(--size) / 3.5);
+  box-shadow: 0px 1px 5px 0px var(--shadow);
+  margin-right: 10px;
+  margin-left: 3px;
+  padding-top: 5px;
 
-    padding-left: 0.5rem;
-    background: var(--bg-end);
-    width: calc(var(--size)/2);
-    height: calc(var(--size)/3.5);
-    box-shadow: 0px 1px 5px 0px var(--shadow);
-    margin-right: 10px;
-    margin-left: 3px;
-    padding-top: 5px;
-
-    color: black;
-    font-weight: 600;
-    text-align: center;
-
+  color: black;
+  font-weight: 600;
+  text-align: center;
 }
-
 
 .bankUpdate {
-    display: table;
-    background: var(--bg-end);
-    color: black;
-    box-shadow: 0px 1px 5px 0px var(--shadow);
-    margin-right: 15px;
-    margin-left: 3px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: 600;
+  display: table;
+  background: var(--bg-end);
+  color: black;
+  box-shadow: 0px 1px 5px 0px var(--shadow);
+  margin-right: 15px;
+  margin-left: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 600;
 }
-
 
 /* form {
     background: var(--bg-end);
@@ -101,37 +88,34 @@ input[type="text"]:focus {
 } */
 
 .bnkBtn {
-    height: 20%;
-    font-size: 15px;
-    margin-right: 5px;
+  height: 20%;
+  font-size: 15px;
+  margin-right: 5px;
 }
 
-
-
 table {
-    color: black;
-    margin-top: 5%;
-    border: 1px solid black;
-    width: 75%;
-    box-shadow: 0px 1px 3px 0px var(--shadow);
-
+  color: black;
+  margin-top: 5%;
+  border: 1px solid black;
+  width: 75%;
+  box-shadow: 0px 1px 3px 0px var(--shadow);
 }
 
 td {
-    text-align: center;
+  text-align: center;
 }
 
 .highlightRow:hover {
-    background-color: var(--highlight-secondary);
-    font-weight: 550;
+  background-color: var(--highlight-secondary);
+  font-weight: 550;
 }
 
 .tabHead {
-    text-decoration: underline;
-    color: var(--bg-input);
-    background-color: var(--bg-start);
+  text-decoration: underline;
+  color: var(--bg-input);
+  background-color: var(--bg-start);
 }
 
 #addSubSelect {
-    height: 1.5rem;
+  height: 1.5rem;
 }

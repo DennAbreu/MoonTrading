@@ -4,7 +4,7 @@ include_once 'header.php';
 
 <link rel="stylesheet" href="css/trade.css" type="text/css">
 <title>Trade</title>
-
+    <div class = 'bodyStyle'>
     <main>
         <section>
             <div class = "leftSide">
@@ -30,7 +30,6 @@ include_once 'header.php';
                         </div>
                     </fieldset>
                 </div>
-
                 <div class ="tradeWidget">
                     <fieldset>
                         <legend>Trade</legend>
@@ -111,6 +110,7 @@ include_once 'header.php';
 
      </section>
 </main>
+</div>
 
 
 <script type = "text/Javascript" src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>

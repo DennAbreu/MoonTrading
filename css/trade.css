@@ -1,238 +1,201 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
 
 html {
-    color: var(--fg-color);
-    font-family: "Nunito", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+  color: var(--fg-color);
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-
-
-body {
-    display: grid;
-    place-items: center;
-
-    min-height: 100vh;
-    background: linear-gradient(45deg,
-            var(--bg-start),
-            var(--bg-end));
+.bodyStyle {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, var(--bg-start), var(--bg-end));
 }
 
 main {
-    --size: 40rem;
-
-    background: var(--bg-input);
-    width: 95%;
-    min-height: calc(var(--size)/0.90);
-    max-height: max-content;
-    color: black;
-    box-shadow: 0px 5px 10px 0px var(--shadow);
-
+  --size: 40rem;
+  background: var(--bg-input);
+  width: 95%;
+  min-height: calc(var(--size) / 0.9);
+  max-height: calc(var(--size) / 0.9);
+  color: black;
+  box-shadow: 0px 5px 10px 0px var(--shadow);
 }
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "leftSide rightSide";
-    place-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "leftSide rightSide";
+  place-content: center;
 }
 
-section>.leftSide {
-    grid-area: leftSide;
-    place-self: left stretch;
-
+section > .leftSide {
+  grid-area: leftSide;
+  place-self: left stretch;
 }
 
-section>.rightSide {
-
-    grid-area: rightSide;
-    place-self: right stretch;
-    margin-top: 5%;
-    margin-left: -50%;
+section > .rightSide {
+  grid-area: rightSide;
+  place-self: right stretch;
+  margin-top: 5%;
+  margin-left: -50%;
 }
 
 .rWidget {
-    display: grid;
-    grid-template-columns: 1fr 0.1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "ls rs";
-    place-content: left;
-
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "ls rs";
+  place-content: left;
 }
 
-.rWidget>.ls {
-    grid-area: ls;
-    place-self: left stretch;
-
+.rWidget > .ls {
+  grid-area: ls;
+  place-self: left stretch;
 }
 
-.rWidget>.rs {
-    grid-area: rs;
-    place-self: left stretch;
-
+.rWidget > .rs {
+  grid-area: rs;
+  place-self: left stretch;
 }
-
 
 h1 {
-    margin-bottom: 0.5rem;
-    color: var(--highlight-primary);
-    font-size: 2.75rem;
-    font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: var(--highlight-primary);
+  font-size: 2.75rem;
+  font-weight: 300;
 }
-
-
 
 label {
-    font-size: var(--font-size-small);
-    text-align: center;
+  font-size: var(--font-size-small);
+  text-align: center;
 }
 
-
-
 .searchBar {
-    padding-top: 1rem;
-    padding-left: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
 }
 
 .extraBtns {
-    padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .stockWidget {
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-right: 53.5%;
-
-
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: 53.5%;
 }
 
 legend {
-    text-transform: uppercase;
-    font-size: 30px;
-
+  text-transform: uppercase;
+  font-size: 30px;
 }
 
 .stockData {
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .categories {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .catValues {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-
 .tradeWidget {
-    max-width: fit-content;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 15rem;
-    color: black;
-
-
+  max-width: fit-content;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 15rem;
+  color: black;
 }
 
 .tradeData {
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .tradeInputs {
-    padding-left: 2rem;
+  padding-left: 2rem;
 }
 
 #numShares {
-    width: 50%;
+  width: 50%;
 }
 
 #buySell {
-    width: 50%;
+  width: 50%;
 }
 
 select {
-    text-align-last: center;
-    padding-right: 10px;
-    direction: rtl;
+  text-align-last: center;
+  padding-right: 10px;
+  direction: rtl;
 }
 
 iframe {
-    /* margin-top: 5%;
-    margin-left: -40%; */
-    box-shadow: 0px 5px 10px 0px var(--shadow);
-
+  /* margin-top: 5%;
+  margin-left: -40%; */
+  box-shadow: 0px 5px 10px 0px var(--shadow);
 }
 
 .rs {
-    margin-left: -400px;
-    margin-bottom: -200%;
-    margin-top: 2%;
-    margin-right: 50%;
-    width: -400px;
-    max-width: -400px;
-
+  margin-left: -400px;
+  margin-bottom: -200%;
+  margin-top: 2%;
+  margin-right: 50%;
+  width: -400px;
+  max-width: -400px;
 }
-
 
 .stoxTbl {
-
-    color: black;
-    background-color: white;
-    font-size: medium;
-    /* width: -200px;
-    min-width: min-content;
-    max-width: fit-content; */
-    max-height: fit-content;
-    border: 2px solid black;
-
+  color: black;
+  background-color: white;
+  font-size: medium;
+  /* width: -200px;
+  min-width: min-content;
+  max-width: fit-content; */
+  max-height: fit-content;
+  border: 2px solid black;
 }
 
-.stoxTbl>td {
-    max-width: min-content;
-    overflow: hidden;
-    white-space: nowrap;
-
+.stoxTbl > td {
+  max-width: min-content;
+  overflow: hidden;
+  white-space: nowrap;
 }
-
-
 
 th {
-    color: var(--bg-input);
-    background-color: var(--bg-start);
+  color: var(--bg-input);
+  background-color: var(--bg-start);
 }
 
-.stoxTbl>tr {
-    background-color: white;
+.stoxTbl > tr {
+  background-color: white;
 }
 
 .newsLink {
-    background-color: white;
-    color: black;
-
+  background-color: white;
+  color: black;
 }
 
-
-
-
 .newsLink:hover {
-    background-color: var(--highlight-secondary);
-    color: white;
+  background-color: var(--highlight-secondary);
+  color: white;
 }

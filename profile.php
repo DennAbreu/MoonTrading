@@ -5,7 +5,7 @@ include_once 'headerProf.php';
 <link rel="stylesheet" href="css/profile.css" type="text/css">
 
 <title>Profile</title>
-
+<div class = 'bodyStyle'>
     <main>
             <center>
             <span class ="topBar">
@@ -70,6 +70,7 @@ include_once 'headerProf.php';
             </div> </center>
            
     </main>
+</div>
    
 
 <script type = "text/Javascript" src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>

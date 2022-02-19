@@ -5,14 +5,13 @@ include_once 'header.php'
 <link rel="stylesheet" href="css/login.css" type="text/css">
 <title>Log In</title>
 
+<div class = 'bodyStyle'>
     <main>
         <section>
             <div class="content">
-
                 <form action ="includes/login.inc.php"  method="post">
                     <h1>Sign In</h1>
                     <p>
-
                         <label>
                             Username/Email:<br>
                             <input type="text"  name ="uname" required>
@@ -26,8 +25,6 @@ include_once 'header.php'
                         </label>
                     </p>
 
-
-                    <!-- <p><br><a href=" #" class="button">Login</a> -->
 
                     <p><br><button type = "submit" name ="submit">Log In</button>
 
@@ -44,7 +41,6 @@ include_once 'header.php'
 
             </div>
 
-            <center>
                  <br><br>
              <?php
 if (isset($_GET["error"])) {
@@ -62,6 +58,7 @@ if (isset($_GET["error"])) {
 
 
     </main>
+</div>
 
 
 </body>

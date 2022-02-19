@@ -5,6 +5,7 @@ include_once 'header.php'
 <link rel="stylesheet" href="css/indexPage.css" type="text/css">
 <title>Home</title>
 
+<div class = 'bodyStyle'>
 <main>
 <section>
     <div class="content">
@@ -32,6 +33,7 @@ include_once 'header.php'
 
 
 </main>
+</div>
 
 </body>
 </html>
