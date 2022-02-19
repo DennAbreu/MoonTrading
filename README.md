@@ -49,7 +49,7 @@ C:\xampp\htdocs\...
 
 4. In the XAMPP Control Panel start the Apache & MySQL actions.
 5. In your browser navigate to <a href='http://localhost/phpmyadmin/'>http://localhost/phpmyadmin/<a>
-6. On the PHPMyAdmin console click on 'import' > 'Browse Your Computer' under 'File to Import', and then navigate to the cisc4900.sql file in the assets folder.
+6. On the PHPMyAdmin console click on 'import' > 'Browse Your Computer' under 'File to Import', and then select the cisc4900.sql file in the assets folder.
 
 ```sh
 C:\xampp\htdocs\MoonTrading-main\MoonTrading-main\assets\cisc4900.sql
@@ -59,8 +59,8 @@ C:\xampp\htdocs\MoonTrading-main\MoonTrading-main\assets\cisc4900.sql
 
 <h2>Credits</h2>
 
-- Author: <a href="www.linkedin.com/in/DennAbreu" target="_blank">Dennis Abreu</a>
-- Graphics: <a href="www.linkedin.com/in/DennAbreu" target="_blank">Dennis Abreu </a>
+- Author: <a href="https://www.linkedin.com/in/dennabreu/" target="_blank">Dennis Abreu</a>
+- Graphics: <a href="https://www.linkedin.com/in/dennabreu/" target="_blank">Dennis Abreu </a>
 
 <h2>Copyright</h2>
 This project is licensed under the terms of the MIT license and protected by Udacity Honor Code and Community Code of Conduct. See <a href="LICENSE.md">license</a> and <a href="LICENSE.DISCLAIMER.md">disclaimer</a>.
