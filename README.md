@@ -38,24 +38,24 @@ Project is complete as per the requirements of Brookyln College's CISC 4900. I a
 
 To get a local copy running on your machine please follow the steps below:
 
-- Download this project as a zip file.
-- Download <a href="https://www.apachefriends.org/download.html">XAMPP local MySQL database</a>.
-- Navigate to the folder where XAMPP is installed and unzip project files in '/htdocs'.
-  <br>Example:
+1. Download this project as a zip file.
+2. Download <a href="https://www.apachefriends.org/download.html">XAMPP local MySQL database</a>.
+3. Navigate to the folder where XAMPP is installed and unzip project files in '/htdocs'.
+   <br>Example:
 
 ```sh
 C:\xampp\htdocs\...
 ```
 
-- In the XAMPP Control Panel start the Apache & MySQL actions.
-- In your browser navigate to <a href='http://localhost/phpmyadmin/'>http://localhost/phpmyadmin/<a>
-- On the PHPMyAdmin console click on 'import' > 'Browse Your Computer' under 'File to Import', and then navigate to the cisc4900.sql file in the assets folder.
+4. In the XAMPP Control Panel start the Apache & MySQL actions.
+5. In your browser navigate to <a href='http://localhost/phpmyadmin/'>http://localhost/phpmyadmin/<a>
+6. On the PHPMyAdmin console click on 'import' > 'Browse Your Computer' under 'File to Import', and then navigate to the cisc4900.sql file in the assets folder.
 
 ```sh
 C:\xampp\htdocs\MoonTrading-main\MoonTrading-main\assets\cisc4900.sql
 ```
 
-- In the XAMP Control Panel, click on 'Admin' for the Apache module OR navigate to 'http://localhost/MoonTrading-main/MoonTrading-main/' in your browser.
+6. In the XAMP Control Panel, click on 'Admin' for the Apache module OR navigate to 'http://localhost/MoonTrading-main/MoonTrading-main/' in your browser.
 
 <h2>Credits</h2>
 
