@@ -1,6 +1,6 @@
 <div align="center"><img src="assets\MT2.png"></div>
 <h1 align="center">Moon Trading</h1>
-<p align="center"><strong>CISC 4900</strong></p>
+<p align="center"><strong>A Project for Brooklyn College's CISC 4900</strong></p>
 
 <div align="center"><img src="demo.gif">LIVE DEMO PLACEHOLDER</img></div>
 
