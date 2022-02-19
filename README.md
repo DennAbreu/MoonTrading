@@ -7,7 +7,7 @@
 <h2>About</h2>
 Moon Trading is a user friendly	paper-trading platform where users can create a portfolio with real stock data from <a href="finnhub.io">Finnhub.io's</a> public stock APIs. This portfolio will provide the user with several metrics to help educate them on future financial moves.
 
-<h2>Goal and Requirements</h2>
+<h2>Goals and Requirements</h2>
 
 My main goal was to learn the basics of web development while researching a topic that I was interested in. I chose to create a paper-trading website in order to provide users with a free and safe way to practice and experiment with trading. With MoonTrading users are able to buy or sell (using fake currency) stocks and monitor the growth of their portfolios.
 
@@ -21,12 +21,24 @@ My main goal was to learn the basics of web development while researching a topi
 - Working with 'sessions' in PHP to validate user logins.
 
 <h2>Built With</h2>
+
 - HTML
 - CSS
 - JavaScript
 - JQuery
 - PHP
 - MySQL with XAMPP
+
+### Built With
+
+| Package                                                  | Docs                                                                  |
+| -------------------------------------------------------- | --------------------------------------------------------------------- |
+| [HTML](https://www.w3schools.com/html/)                  | [:notebook:](https://www.w3schools.com/html/)                         |
+| [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)  | [:notebook:](https://www.w3schools.com/cssref/default.asp)            |
+| [JavaScript ES6](https://www.javascript.com/)            | [:notebook:](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
+| [JQuery](https://jquery.com/)                            | [:notebook:](https://api.jquery.com/)                                 |
+| [PHP] (https://www.php.net/)                             | [:notebook:](https://www.php.net/manual/en/)                          |
+| [MySQL(XAMPP)](https://www.apachefriends.org/index.html) | [:notebook:](https://www.apachefriends.org/faq_windows.html)          |
 
 <h2>Project status</h2>
 Project is complete as per the requirements of Brookyln College's CISC 4900. I am planning on rewriting and improving this project with frameworks such as React in the future.
@@ -43,8 +55,6 @@ To get a local copy running on your machine please follow the steps below:
 ```sh
 C:\xampp\htdocs
 ```
-
-<br><br>
 
 - In the XAMPP Control Panel start the Apache & MySQL actions.
 - In your browser navigate to <a href='http://localhost/phpmyadmin/'>http://localhost/phpmyadmin/<a>
