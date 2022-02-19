@@ -29,7 +29,7 @@ include_once 'headerProf.php';
             </span>
             <span class = "currBank" id = "newInv"
             title = "This is the current value of all your stocks. This can be lower or higher than the amount you initially invested depending on how the market is going.">
-            Stocks Value: <?php
+            Stocks Value: Test <?php
                 echo  " $".$stockValue;
             ?>
             </span>
@@ -43,31 +43,33 @@ include_once 'headerProf.php';
             </span>
 
             
-            <br><br><div class = "bankUpdate"
-            title = "You can add or subtract more funds to your total bank account using this form.">
-                <form action="includes/bank.inc.php" method = "post">
-                <label for="amount">Bank</label>
-                <input type="text" size = "50" name="bankAmt" id="amtToUpdate" required/>
-                <select name="addSub" id="addSubSelect">
-                     <option value ="empty">Select</option>
-                     <option value ="add">Add</option>
-                     <option value ="subtract">Subtract</option>
-                </select>
-                <button class="bnkBtn" type ="submit" >Update</button>
-                </form>
+            <br><br>
+            
+            <div class = "bankUpdate"
+                title = "You can add or subtract more funds to your total bank account using this form.">
+                <div class='bankUpdateContents'>
+                    <form action="includes/bank.inc.php" method = "post">
+                        <label for="amount">Bank</label>
+                        <input type="text" size = "50" name="bankAmt" id="amtToUpdate" required/>
+                        <select name="addSub" id="addSubSelect">
+                            <option value ="empty">Select</option>
+                            <option value ="add">Add</option>
+                            <option value ="subtract">Subtract</option>
+                        </select>
+                        <button class="bnkBtn" type ="submit" >Update</button>
+                    </form>
                 <!-- onclick="sendToBank()" -->
-                </div>
-            <span id ="bankMssg"></span>
-            
-            <div class = "stockDisplay" id = "sDisplay">
-            
-                <?php
-                      displayStocks($conn, $userName);
-                ?>
-               
-               
                 
-            </div> </center>
+                <!-- <span id ="bankMssg"></span> -->
+                </div>
+            </div>
+
+            <div class = "stockDisplay" id = "sDisplay">
+            <?php
+                  displayStocks($conn, $userName);
+            ?>
+           
+           </div> </center>
            
     </main>
 </div>

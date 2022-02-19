@@ -76,12 +76,13 @@ a.button:hover {
   color: var(--highlight-primary);
 }
 
-button {
+/* button {
   border: 1px solid var(--highlight-primary);
   background-color: var(--highlight-primary);
   border-color: var(--highlight-secondary);
   color: var(--hightlight-fg);
   padding: 0.25rem 1.5rem;
+  height: fit-content;
 
   border-radius: 0.25rem;
   font-size: 18px;
@@ -94,7 +95,7 @@ button {
 button:hover {
   background-color: var(--highlight-secondary);
   color: var(--highlight-primary);
-}
+} */
 
 nav > ul {
   display: grid;

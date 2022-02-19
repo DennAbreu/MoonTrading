@@ -1,7 +1,6 @@
 <?php
-include_once 'header.php'
+include_once 'loginHeader.php'
 ?>
-
 <link rel="stylesheet" href="css/login.css" type="text/css">
 <title>Log In</title>
 

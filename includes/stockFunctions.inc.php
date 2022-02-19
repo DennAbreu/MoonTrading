@@ -1,5 +1,4 @@
 <?php
-
 require_once 'profFunctions.inc.php';
 require_once 'bankFunctions.inc.php';
 
@@ -52,8 +51,8 @@ function highPrice($sSym)
 
     $_SESSION["highPrice"] = $ret;
     return $ret;
-
 }
+
 function lowPrice($sSym)
 {
     $data = getApiData($sSym);

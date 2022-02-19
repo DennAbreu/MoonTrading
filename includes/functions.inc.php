@@ -3,7 +3,7 @@
 //checks if the username is valid
 function invalidUsername($uname)
 {
-    
+
     //Built in preg match checks to see if $uname is valid
     //with string parameters listed
 
