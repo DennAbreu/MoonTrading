@@ -31,14 +31,14 @@ My main goal was to learn the basics of web development while researching a topi
 
 ### Built With
 
-| Package                                                  | Docs                                                                  |
-| -------------------------------------------------------- | --------------------------------------------------------------------- |
-| [HTML](https://www.w3schools.com/html/)                  | [:notebook:](https://www.w3schools.com/html/)                         |
-| [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)  | [:notebook:](https://www.w3schools.com/cssref/default.asp)            |
-| [JavaScript ES6](https://www.javascript.com/)            | [:notebook:](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
-| [JQuery](https://jquery.com/)                            | [:notebook:](https://api.jquery.com/)                                 |
-| [PHP] (https://www.php.net/)                             | [:notebook:](https://www.php.net/manual/en/)                          |
-| [MySQL(XAMPP)](https://www.apachefriends.org/index.html) | [:notebook:](https://www.apachefriends.org/faq_windows.html)          |
+| Package                                                  | Docs                                                                           |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [HTML](https://www.w3schools.com/html/)                  | [:notebook: Click Me](https://www.w3schools.com/html/)                         |
+| [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)  | [:notebook: Click Me](https://www.w3schools.com/cssref/default.asp)            |
+| [JavaScript ES6](https://www.javascript.com/)            | [:notebook: Click Me](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
+| [JQuery](https://jquery.com/)                            | [:notebook: Click Me](https://api.jquery.com/)                                 |
+| [PHP] (https://www.php.net/)                             | [:notebook: Click Me](https://www.php.net/manual/en/)                          |
+| [MySQL(XAMPP)](https://www.apachefriends.org/index.html) | [:notebook: Click Me](https://www.apachefriends.org/faq_windows.html)          |
 
 <h2>Project status</h2>
 Project is complete as per the requirements of Brookyln College's CISC 4900. I am planning on rewriting and improving this project with frameworks such as React in the future.
