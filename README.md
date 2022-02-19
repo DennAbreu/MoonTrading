@@ -22,15 +22,6 @@ My main goal was to learn the basics of web development while researching a topi
 
 <h2>Built With</h2>
 
-- HTML
-- CSS
-- JavaScript
-- JQuery
-- PHP
-- MySQL with XAMPP
-
-### Built With
-
 | Package                                                  | Docs                                                                           |
 | -------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | [HTML](https://www.w3schools.com/html/)                  | [:notebook: Click Me](https://www.w3schools.com/html/)                         |
@@ -47,17 +38,24 @@ Project is complete as per the requirements of Brookyln College's CISC 4900. I a
 
 To get a local copy running on your machine please follow the steps below:
 
-- Download this project as a zip.
+- Download this project as a zip file.
 - Download <a href="https://www.apachefriends.org/download.html">XAMPP local MySQL database</a>.
 - Navigate to the folder where XAMPP is installed and unzip project files in '/htdocs'.
-  <br><br>Example:
+  <br>Example:
 
 ```sh
-C:\xampp\htdocs
+C:\xampp\htdocs\...
 ```
 
 - In the XAMPP Control Panel start the Apache & MySQL actions.
 - In your browser navigate to <a href='http://localhost/phpmyadmin/'>http://localhost/phpmyadmin/<a>
+- On the PHPMyAdmin console click on 'import' > 'Browse Your Computer' under 'File to Import', and then navigate to the cisc4900.sql file in the assets folder.
+
+```sh
+C:\xampp\htdocs\MoonTrading-main\MoonTrading-main\assets\cisc4900.sql
+```
+
+- In the XAMP Control Panel, click on 'Admin' for the Apache module OR navigate to 'http://localhost/MoonTrading-main/MoonTrading-main/' in your browser.
 
 <h2>Credits</h2>
 
