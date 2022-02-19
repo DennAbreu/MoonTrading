@@ -37,7 +37,7 @@ My main goal was to learn the basics of web development while researching a topi
 | [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)  | [:notebook: Click Me](https://www.w3schools.com/cssref/default.asp)            |
 | [JavaScript ES6](https://www.javascript.com/)            | [:notebook: Click Me](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
 | [JQuery](https://jquery.com/)                            | [:notebook: Click Me](https://api.jquery.com/)                                 |
-| [PHP] (https://www.php.net/)                             | [:notebook: Click Me](https://www.php.net/manual/en/)                          |
+| [PHP](https://www.php.net/)                              | [:notebook: Click Me](https://www.php.net/manual/en/)                          |
 | [MySQL(XAMPP)](https://www.apachefriends.org/index.html) | [:notebook: Click Me](https://www.apachefriends.org/faq_windows.html)          |
 
 <h2>Project status</h2>
