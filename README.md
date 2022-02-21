@@ -2,7 +2,7 @@
 <h1 align="center">Moon Trading</h1>
 <p align="center"><strong>A Project for Brooklyn College's CISC 4900</strong></p>
 
-<div align="center"><img src="demo.gif">LIVE DEMO PLACEHOLDER</img></div>
+<div align="center"><a href="https://www.youtube.com/watch?v=JfhS5jCowzM" target="_blank">Click to see a demo!</a></div>
 
 <h2>About</h2>
 Moon Trading is a user friendly	paper-trading platform where users can create a portfolio with real stock data from <a href="finnhub.io">Finnhub.io's</a> public stock APIs. This portfolio will provide the user with several metrics to help educate them on future financial moves.
